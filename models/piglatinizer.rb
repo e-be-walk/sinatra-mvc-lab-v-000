@@ -5,6 +5,7 @@ class PigLatinizer
     alpha = ('a'..'z').to_a
     vowels = %w[a e i o u A E I O U]
     consonants = alpha - vowels
+    binding.pry
 
     if vowels.include?(word[0])
       word + 'way'
